@@ -1,0 +1,37 @@
+.topPage{
+    background-color: rgb(9, 0, 128);
+}
+
+.header-container{
+    font-weight: bold;
+    font-family: "Indie Flower";
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    
+}
+
+.subTitle{
+    font-size: 20px;
+    font-family: "Indie Flower";
+    color: white;
+    
+}
+
+.tabSpace{
+    
+    font-weight: bold;
+    padding-left: 10em;
+    margin-right: 10em;
+    font-size: 15px;
+    color: white;
+}
+
+.link-class{
+    text-decoration: none;
+    color: tomato;
+    &:focus, &:hover, &:visited, &:link, &:active{
+        text-decoration: none;
+    }
+}
