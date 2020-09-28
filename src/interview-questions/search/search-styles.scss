@@ -1,0 +1,84 @@
+@keyframes changeSearchColor{
+    from {color: blue;}
+    to {color : black;}
+}
+
+@keyframes changeNewSearchColor{
+    from {color: rgb(36, 74, 241);}
+    to {color : black;}
+}
+
+.search{
+    float: left;
+    padding: 10px;
+    margin: 53px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom:30px;
+    animation-name: changeSearchColor;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.search:hover{
+    transform: scale(1.5);
+    cursor:pointer;
+}
+
+.newSearch{
+    float: left;
+    padding: 10px;
+    margin: 53px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom:30px;
+    animation-name: changeNewSearchColor;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.newSearch:hover{
+    transform: scale(1.5);
+    cursor:pointer;
+}
+
+.fadeSearch{
+    float: left;
+    padding: 10px;
+    margin: 60px;
+    font-size: 20px;
+}
+
+.fadeSearch:hover{
+    transform: scale(1.5);
+    cursor:pointer;
+}
+
+.output{
+    padding-top:375px;
+    margin: 10px;   
+}
+
+.binaryButton{
+    //margin-top:20px;
+    text-align: center;   
+    border-radius: 12px;
+    margin: 30px;
+    width: 12%;
+    font-size:15px;
+    padding : 3px;
+    transition-duration: 0.4s;
+
+    &:hover{
+        background-color: blue;
+        cursor: pointer;
+    }
+}
+
+.outputMessage{
+    font-size: 15px;
+    font-weight:bold;
+    color: teal;
+}
+
+

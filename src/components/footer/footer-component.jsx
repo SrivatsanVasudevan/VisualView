@@ -11,6 +11,10 @@ const Footer = () => (
       <Link className = "link-bottom-class" to = "/"> <span className = "pageSpaces"> HOME </span> </Link>
       <span className = "pageSpaces">  | </span>
       <Link className = "link-bottom-class" to = "/fizzbuzz"> <span className = "pageSpaces"> FIZZBUZZ </span> </Link>
+      <span className = "pageSpaces"> | </span>
+      <Link className = "link-bottom-class" to = "/binarysearch"> <span className = "pageSpaces"> BINARY SEARCH </span> </Link>
+      <span className = "pageSpaces"> | </span>
+      <span className = "pageSpaces"> KADANE's ALGORITHM </span>
     </div>
     </>
 );

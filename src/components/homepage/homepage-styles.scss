@@ -17,19 +17,47 @@
 .listItems{
     
     padding-bottom: 20px;
-    padding-top: 50px;
+    padding-top: 20px;
     float:left;
     width: 25%;
     height: 100px;
-    margin-left: 220px;
-    margin-right: -150px;
+    margin-left: 250px;
+    margin-right: -120px;
     font-size:20px;
-    margin-top: 0px;
+    margin-top: 10px;
     margin-bottom:50px;
     background-color: rgb(195, 187, 248);
     border-radius: 50px;
-    padding-left:30px;
+    padding-left:25px;
     padding-right:20px;
+
+    &:hover{
+        cursor:pointer;
+        transform: scale(1.05);
+    }
+}
+
+.sampleQuestionLine{
+    padding-top:30px;
+    padding-bottom:30px;
+    font-size: 20px;
+    color: blue;
+    font-weight: bold;
+}
+
+.sampleQuestions{
+    border-radius: 50px;
+    background-color:  rgb(195, 187, 248);
+    margin-left:500px;
+    margin-right:500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    
+    // padding-left: 25px;
+    // padding-right: 25px;
+    
+    list-style: none;
 
     &:hover{
         cursor:pointer;

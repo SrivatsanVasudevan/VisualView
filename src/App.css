@@ -1,8 +1,6 @@
 .App {
   text-align: center;
-  background-color: #95dada;
-  transform: translateZ(0);
-  transition: transform 0.25s ease-out;
+  
 }
 
 

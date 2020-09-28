@@ -3,8 +3,8 @@ import React from 'react';
 import "./fizzbuzz-styles.scss";
 
 class FizzBuzz extends React.Component{
-    constructor(props){
-        super(props);
+    constructor(){
+        super();
 
         this.state = {
             array: [],
@@ -85,10 +85,10 @@ class FizzBuzz extends React.Component{
                 
             ))}
                 
-            <button onClick = {() => {this.getNumbersForArray()}} className = "fizzBuzzClick" > Get numbers for Array 
+            <button onClick = {() => {this.getNumbersForArray()}} className = "buttonClick" > Get numbers for Array 
             </button>
             
-            <button onClick = {() => {this.fizzBuzz(array)}} className = "fizzBuzzClick">Generate Fizz Buzz Algorithm </button>
+            <button onClick = {() => {this.fizzBuzz(array)}} className = "buttonClick">Generate Fizz Buzz Algorithm </button>
             
             
             </div>

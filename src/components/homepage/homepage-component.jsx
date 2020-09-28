@@ -27,6 +27,20 @@ const HomePage = () => (
         VisualView.com helps in visualizing basic coding interview questions to help in your
         preparation process and provide a new perspective to preparing for coding interviews! 
     </div>
+
+    <div className = "sampleQuestionLine">Here are some sample questions that you can test out and view their respective visualizations: </div>
+    <ul>
+    <li className = "sampleQuestions"> FizzBuzz : The Classic Interview Question! </li>
+    <br />
+    <li className = "sampleQuestions"> Binary Search: Find your keys in log(n) time! </li>
+    <br />
+    <li className = "sampleQuestions"> Kadane's Algorithm: Dynamic Programming made easy! </li>
+    </ul>
+    
+    <div className = "homepage-container">
+       ... and a lot more coming soon!
+    </div>
+
     </>
 );
 
