@@ -44,7 +44,6 @@ class Search extends React.Component{
             let animatedArray = [];
             const mid = Math.floor((low + high)/2);
             
-            
             if(this.state.target === array[mid]){
                 result = mid;
                 break;
@@ -127,7 +126,6 @@ class Search extends React.Component{
         const {array} = this.state;
         const {mid} = this.state;
         const {tempArray} = this.state;
-        const {pos} = this.state;
         return(
             <>
            
@@ -140,6 +138,16 @@ class Search extends React.Component{
            element, and if it is true, we eliminate the second half of the list and check the first
            half of the list with the same process and vice-versa. This process is an efficient searching algorithm which runs in 
            O(log(n)) time complexity. </div>
+
+           <div className = "problemStatement"> The formula to find the middle element, given that the left
+           element is 0, and the right element is the array length is: </div>
+
+           <div className = "formulae"> mid = (left + right)/2 </div>
+
+           <div className = "problemStatement"> If the mid element is the target, the algorithm ends there
+           and returns the target. Else, we check if the target is lesser than the mid, and then we eliminate the right half of the 
+           array and continue the above steps and similarly, we check if the target is greater than the mid
+           and then eliminate the left half of the array and continue till we find the element. </div>
 
 
             <div >

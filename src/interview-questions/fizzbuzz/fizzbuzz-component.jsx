@@ -9,12 +9,15 @@ class FizzBuzz extends React.Component{
         this.state = {
             array: [],
             color : "rebeccapurple",
+            visible : false
         }
     }
 
     
 
     fizzBuzz(array){
+        this.setState({array:[], visible:true });
+        console.log(this.state.visible);
         for(let number = 0; number < 24; number++){
             if(array[number]%3 === 0 && array[number]%5 === 0){
                 array[number] = "FizzBuzz";
@@ -30,14 +33,14 @@ class FizzBuzz extends React.Component{
             }
             
             
-
-            setTimeout(
+            this.getAnimationsForNumbers(array);
+            /*setTimeout(
                 function() {
                     this.setState({array,color:"black"});
                 }
                 .bind(this),
                 1000
-            );
+            );*/
         }
     }
 
@@ -50,7 +53,25 @@ class FizzBuzz extends React.Component{
         for(let i=0; i< 24; i++){
             array.push(Math.floor(Math.random()*100));
         }
-        this.setState({array, color:"rebeccapurple",animation:"changeColor"});
+        this.setState({array});
+    }
+
+    getAnimationsForNumbers(array){
+        const tempArray = [];
+        for(let i=0;i<array.length;i++){
+            setTimeout(() => {
+                tempArray.push(array[i]);
+                this.setState({array:tempArray});
+                if(i === array.length-1){
+                    this.setState({visible:false});
+                }
+            },
+            i*1000);
+            
+        }
+        
+        
+        
     }
     
 
@@ -85,11 +106,13 @@ class FizzBuzz extends React.Component{
                 
             ))}
                 
-            <button onClick = {() => {this.getNumbersForArray()}} className = "buttonClick" > Get numbers for Array 
-            </button>
+            <div className = {!this.state.visible?"":"fizzbuzzButtonSpace"}>
+            {!this.state.visible ?<button onClick = {() => {this.getNumbersForArray()}} className = "buttonClick" > Get numbers for Array 
+            </button> : null}
             
-            <button onClick = {() => {this.fizzBuzz(array)}} className = "buttonClick">Generate Fizz Buzz Algorithm </button>
-            
+            {!this.state.visible ? <button onClick = {() => {this.fizzBuzz(array)}} className = "buttonClick">Generate Fizz Buzz Algorithm </button>
+            : null}
+            </div>
             
             </div>
             </>

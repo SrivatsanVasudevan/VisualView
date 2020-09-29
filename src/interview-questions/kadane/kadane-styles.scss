@@ -1,0 +1,95 @@
+@keyframes fadeIn{
+    0% {opacity: 0;
+        color: blue;
+    }
+    100% {opacity: 1;
+          color: black;
+    }
+}
+
+@keyframes kadaneColorChange{
+    from{color:blue;}
+    to{color:black;}
+}
+
+.formulae{
+    font-family: "Reenie Beanie";
+    color: blue;
+    font-size: 40px;
+    font-weight: bold;
+    list-style: none;
+
+    &:hover{
+        transform: scale(1.5);
+        cursor: pointer;
+    }
+}
+
+.kadaneNumbers{
+    float:left;
+    font-size:20px;
+    margin:30px;
+    margin-right : 38px;
+    padding: 10px;
+    width:100px;
+    height: 100px;
+    font-weight: bold;
+    margin-bottom:0px;
+    animation-name: kadaneColorChange;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.kadaneNumbers:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.tempArray{
+    margin: 30px;
+    padding: 0px;
+    float:left;
+    font-size:20px;
+    margin-right: 38px;
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+    animation-name: fadeIn;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+    &:hover{
+        transform: scale(1.5);
+        cursor: pointer;
+    }
+}
+
+.result{
+    font-size:20px;
+    padding: 10px;
+    padding-left:0px;
+    font-weight: bold;
+    color: teal;
+}
+
+.kadaneButton{
+    margin: 30px;
+    width: 10%;
+    padding: 5px;
+    
+    font-size: 15px;
+    border-radius: 12px;
+    padding: 20x;
+    transition-duration: 0.4s;
+    border: 2px solid black;
+    
+
+    &:hover{
+        background-color: blue;
+        cursor: pointer;
+    }
+}
+
+.buttonSpace{
+    margin-bottom: 260px;
+}

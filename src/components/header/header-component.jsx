@@ -15,7 +15,7 @@ const Header = () => (
         <Link to = "/"> <span className = "tabSpace"> HOME  </span> </Link>
         <Link to = "/fizzbuzz"> <span className = "tabSpace"> FIZZBUZZ </span> </Link>   
         <Link to = "/binarysearch"> <span className = "tabSpace"> BINARY SEARCH </span> </Link>
-        <span className = "tabSpace"> KADANE's ALGORITHM </span>
+        <Link to = "/kadane"> <span className = "tabSpace"> KADANE's ALGORITHM </span> </Link>
             
         <br />
 

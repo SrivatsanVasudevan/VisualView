@@ -6,6 +6,7 @@ import Footer from './components/footer/footer-component';
 import HomePage from './components/homepage/homepage-component';
 import {Route,Switch} from 'react-router-dom';
 import Search from './interview-questions/search/search-component';
+import Kadane from './interview-questions/kadane/kadane-component';
 
 function App() {
   return (
@@ -16,10 +17,12 @@ function App() {
         <Route path = "/" exact component = {HomePage} /> 
         <Route path = "/fizzbuzz" exact component = {FizzBuzz} /> 
         <Route path = "/binarysearch" exact component = {Search} />
+        <Route path = "/kadane" exact component = {Kadane} />
       </Switch>}
-      {//<Search />
+      {
       }   
-      <Footer />
+      {<Footer />
+      }
       
       
       

@@ -14,7 +14,7 @@ const Footer = () => (
       <span className = "pageSpaces"> | </span>
       <Link className = "link-bottom-class" to = "/binarysearch"> <span className = "pageSpaces"> BINARY SEARCH </span> </Link>
       <span className = "pageSpaces"> | </span>
-      <span className = "pageSpaces"> KADANE's ALGORITHM </span>
+      <Link className = "link-bottom-class" to = "/kadane" > <span className = "pageSpaces"> KADANE's ALGORITHM </span> </Link>
     </div>
     </>
 );

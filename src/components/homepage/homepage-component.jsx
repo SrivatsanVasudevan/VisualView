@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Link} from 'react-router-dom';
 
 import '../homepage/homepage-styles.scss';
 
@@ -30,11 +30,11 @@ const HomePage = () => (
 
     <div className = "sampleQuestionLine">Here are some sample questions that you can test out and view their respective visualizations: </div>
     <ul>
-    <li className = "sampleQuestions"> FizzBuzz : The Classic Interview Question! </li>
+    <Link className = "sampleQuestionsLink" to = "/fizzbuzz"> <li className = "sampleQuestions"> FizzBuzz : The Classic Interview Question! </li> </Link>
     <br />
-    <li className = "sampleQuestions"> Binary Search: Find your keys in log(n) time! </li>
+    <Link className = "sampleQuestionsLink" to = "/binarysearch"> <li className = "sampleQuestions"> Binary Search: Find your keys in log(n) time! </li> </Link>
     <br />
-    <li className = "sampleQuestions"> Kadane's Algorithm: Dynamic Programming made easy! </li>
+    <Link className = "sampleQuestionsLink" to = "/kadane"> <li className = "sampleQuestions"> Kadane's Algorithm: Dynamic Programming made easy! </li> </Link>
     </ul>
     
     <div className = "homepage-container">
