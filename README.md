@@ -1,6 +1,6 @@
 # Welcome to VisualView : The coding questions visualization website!
 
-### A programming website created by Srivatsan Vasudevan
+### A visualization website created by Srivatsan Vasudevan
 
 ---
 
