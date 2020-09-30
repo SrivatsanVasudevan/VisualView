@@ -92,6 +92,7 @@ class Kadane extends React.Component{
 
         return(
             <>
+            
             <div >
 
                 <div className = "problem"> Kadane's Algorithm </div>

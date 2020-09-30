@@ -77,7 +77,6 @@ class FizzBuzz extends React.Component{
 
         return(
             <>
-            
             <div className = "container">
                 <div className = "problem"> FizzBuzz </div> 
                 <div className = "problemStatement">

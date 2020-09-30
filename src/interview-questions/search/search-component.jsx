@@ -129,6 +129,7 @@ class Search extends React.Component{
         return(
             <>
            
+
            <div className = "problem">Binary Search</div>
 
            <div className = "problemStatement"> Given a sorted array of numbers, you have to find the targeted
