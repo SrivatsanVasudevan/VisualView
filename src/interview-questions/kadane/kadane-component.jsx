@@ -16,7 +16,7 @@ class Kadane extends React.Component{
     }
 
     componentDidMount(){
-        
+        window.scrollTo(0,0);
         this.generateArray();
        
     }
@@ -41,11 +41,11 @@ class Kadane extends React.Component{
             
             max = Math.max(max,dp[i])
         }
-        console.log(max);
+        
     }
 
     kadaneWithoutArray(array){
-        this.setState({disappear:true,max : "",desc : "Given below are the maximum subarray sums for each index of the array using the above formula"});
+        this.setState({disappear:true,max : "",desc : "Given below are the maximum subarray sums at each index of the array using the above formula."});
         let prevNumber = 0, currNumber = array[0], max = -100;
         const tempArray = [];
 
@@ -96,7 +96,7 @@ class Kadane extends React.Component{
 
                 <div className = "problem"> Kadane's Algorithm </div>
 
-                <div className = "problemStatement"> Given a list of unsorted numbers (consisting of
+                <div className = "problemStatement"> Given an array of unsorted numbers (consisting of
                 positive and negative numbers), find the maximum subarray sum. For example, in the 
                 array [4,2,1,1], since all elements are positive, the maximum subarray sum is simply
                 the sum of all the elements i.e, 4+2+1+1 = 8. But given an array [5, -7, 2, 3], we 
@@ -115,7 +115,7 @@ class Kadane extends React.Component{
                 </ul>
 
                 <div className = "problemStatement"> The above formula will find the maximum subarray
-                sum, and the following visualization represents it for each index of the array. </div>
+                sum, and the following visualization represents the maximum sum at each index of the array. </div>
 
             {
                 array.map((value,index) => (

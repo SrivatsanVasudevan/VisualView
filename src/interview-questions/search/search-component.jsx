@@ -24,6 +24,7 @@ class Search extends React.Component{
     }
 
     componentDidMount(){
+        window.scrollTo(0,0);
         this.getArray();
     }
     
@@ -66,7 +67,6 @@ class Search extends React.Component{
                 low = mid + 1;
                 for(let i = low;i<=high;i++){
                     animatedArray.push(array[i]);
-                    console.log(animatedArray);
                     setTimeout(
                         function() {
                             this.setState({tempArray:animatedArray, visible:true});
@@ -91,7 +91,7 @@ class Search extends React.Component{
 
         setTimeout(
             function() {
-                this.setState({mid: `The target was found at position ${result} !`, visible:false , disappear:false, tempArray:[]});
+                this.setState({mid: `The target was found at position ${result}!`, visible:false , disappear:false, tempArray:[]});
             }
             .bind(this),
             15000
@@ -131,22 +131,22 @@ class Search extends React.Component{
            
            <div className = "problem">Binary Search</div>
 
-           <div className = "problemStatement"> Given a sorted list of numbers, you have to find the targeted
-           value and return its position in the list using binary search. The Binary Search algorithm works
-           by breaking a sorted list into halves. We first check and compare the middle element with target,
+           <div className = "problemStatement"> Given a sorted array of numbers, you have to find the targeted
+           value and return its position in the array using binary search. The Binary Search algorithm works
+           by breaking a sorted array into halves. We first check and compare the middle element with the target,
            and if it matches, we have a solution. Else, we check if the target is lesser than the middle
-           element, and if it is true, we eliminate the second half of the list and check the first
-           half of the list with the same process and vice-versa. This process is an efficient searching algorithm which runs in 
-           O(log(n)) time complexity. </div>
+           element, and if it is true, we eliminate the second half of the array and check the first
+           half of the array with the same process and vice-versa. This is an efficient searching algorithm which runs in 
+           O(log(N)) time complexity, where N is the length of the array. </div>
 
-           <div className = "problemStatement"> The formula to find the middle element, given that the left
-           element is 0, and the right element is the array length is: </div>
+           <div className = "problemStatement"> The formula to find the middle element, given that the position of the left
+           element is 0, and the position of the right element is the array length is: </div>
 
            <div className = "formulae"> mid = (left + right)/2 </div>
 
-           <div className = "problemStatement"> If the mid element is the target, the algorithm ends there
-           and returns the target. Else, we check if the target is lesser than the mid, and then we eliminate the right half of the 
-           array and continue the above steps and similarly, we check if the target is greater than the mid
+           <div className = "problemStatement"> If the middle element is the target, the algorithm ends there
+           and we return the middle element position. Else, we check if the target is lesser than the middle element, and then we eliminate the right half of the 
+           array and continue the above steps and similarly, we check if the target is greater than the middle element
            and then eliminate the left half of the array and continue till we find the element. </div>
 
 
@@ -168,19 +168,15 @@ class Search extends React.Component{
                 ))}
             </div>
 
+
+            <div className = {!this.state.disappear? "" : "output"}>
+                <div className = {this.state.disappear?"":"outputMessage" }>{mid}</div>
+            </div>
             
 
                 {!this.state.disappear ?<button className = "binaryButton"  onClick = {() => {this.getArrayAndTargetValue()}}> Generate new Array and target </button> :null  }
             
                     {!this.state.disappear ? <button className = "binaryButton"  onClick = {() => {this.getBinarySearch(array)} }> Find position of value {this.state.target} </button> : null}
-            
-        
-            
-            <div className = {!this.state.disappear? "" : "output"}>
-                <span className = "outputMessage" >{mid}</span>
-            </div>
-
-            
             
             
             </>

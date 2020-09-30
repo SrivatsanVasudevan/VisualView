@@ -3,8 +3,10 @@ import {Link} from 'react-router-dom';
 
 import '../homepage/homepage-styles.scss';
 
+
+
 const HomePage = () => (
-    <>
+    <>{window.scrollTo(0,0)}
     <h1> Welcome to VisualView! </h1>
 
     <div className = "homepage-container">
@@ -32,7 +34,7 @@ const HomePage = () => (
     <ul>
     <Link className = "sampleQuestionsLink" to = "/fizzbuzz"> <li className = "sampleQuestions"> FizzBuzz : The Classic Interview Question! </li> </Link>
     <br />
-    <Link className = "sampleQuestionsLink" to = "/binarysearch"> <li className = "sampleQuestions"> Binary Search: Find your keys in log(n) time! </li> </Link>
+    <Link className = "sampleQuestionsLink" to = "/binarysearch"> <li className = "sampleQuestions"> Binary Search: Find your keys in log(N) time! </li> </Link>
     <br />
     <Link className = "sampleQuestionsLink" to = "/kadane"> <li className = "sampleQuestions"> Kadane's Algorithm: Dynamic Programming made easy! </li> </Link>
     </ul>
