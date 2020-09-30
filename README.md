@@ -1,14 +1,18 @@
-## Welcome to VisualView : The coding questions visualization website!
+# Welcome to VisualView : The coding questions visualization website!
+
+### A programming website created by Srivatsan Vasudevan
+
+---
 
 VisualView.com helps in visualizing basic coding interview questions to help in your preparation process and provide a new perspective to preparing for coding interviews!
 
 The website currently has visualizations of the following coding questions:
 
-### FizzBuzz: The classic interview question!
+- ### FizzBuzz: The classic interview question!
 
-### Binary Search: Did you just lose your keys? Find them in O(log(N)) time!
+- ### Binary Search: Did you just lose your keys? Find them in O(log(N)) time!
 
-### Kadane's Algorithm: Dynamic Programming made easy!
+- ### Kadane's Algorithm: Dynamic Programming made easy!
 
 ... and a lot more coming soon!
 
